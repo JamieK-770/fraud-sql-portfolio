@@ -1,6 +1,6 @@
 SELECT
-     ipaddress
-    ,COUNT(DISTINCT id) AS user_count
+     ipaddress,
+     COUNT(DISTINCT id) AS user_count
 FROM geoipinfo g
 JOIN users u
     ON g.entityid = u.id
